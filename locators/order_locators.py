@@ -1,0 +1,28 @@
+from selenium.webdriver.common.by import By
+
+class Orderlocators:
+    ORDER = (By.XPATH, "//button[contains(text(), 'Заказать')]")
+    NAME = (By.XPATH, "//input[@placeholder='* Имя']")
+    SURNAME = (By.XPATH, "//input[@placeholder='* Фамилия']")
+    ADDRES =  (By.XPATH, "//input[@placeholder='* Адрес: куда привезти заказ']")
+    STATION = (By.XPATH, "//input[@placeholder='* Станция метро']")
+    LIST_OF_STATION =  (By.CLASS_NAME, "select-search_select")
+    SELECTED_STATION = (By.XPATH, ".//li[@class='select-search__row']")
+    NUMBER = (By.XPATH, "//input[@placeholder='* Телефон: на него позвонит курьер']")
+    NEXT_BUTTON = (By.XPATH, '//button[text()="Далее"]')
+    COOKIE =  (By.CLASS_NAME, 'App_CookieButton__3cvqF')
+    RENT_INFO =(By.XPATH, "//div[text()='Про аренду' and contains(@class, 'Order_Header')]")
+    DATE_OF_DELIVERY = (By.XPATH, "//input[@placeholder='* Когда привезти самокат']")
+    CALENDAR = (By.XPATH, "//div[@class='react-datepicker-popper']")
+    CALENDAR_ITEM = (By.XPATH, "//div[contains(@class, 'react-datepicker') and contains(@tabindex, '0')]")
+    RENTAL_PERIOD = (By.CLASS_NAME, 'Dropdown-arrow')
+    DROPDOWN_RENTAL_PERIOD = (By.XPATH, ".//div[@class = 'Dropdown-menu']/div[text() ='четверо суток']")
+    CHECKBOX_GREY = (By.XPATH, "//input[@id='grey']")
+    COMMENT = (By.XPATH, "//input[@placeholder='Комментарий для курьера']")
+    MAKE_ORDER = (By.XPATH, "//div[contains(@class, 'Order_Buttons')]/button[text()='Заказать']")
+    YES =  (By.XPATH, '//button[text()="Да"]')
+    STATUS =  (By.XPATH, '//button[text()="Посмотреть статус"]')
+    ORDER_2 = (By.CLASS_NAME, 'Button_Middle__1CSJM')
+
+    YANDEX = (By.CLASS_NAME, 'Header_LogoYandex__3TSOI')
+    SCOOTER =  (By.CLASS_NAME, 'Header_LogoScooter__3lsAR')
